@@ -8,6 +8,8 @@ public class PlayerWalk : MonoBehaviour
     public float speed = 3.0f;
     Animator myAnimator;
 
+    public int drawings;
+
     public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
