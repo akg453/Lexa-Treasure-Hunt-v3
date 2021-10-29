@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerWalk : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PlayerWalk : MonoBehaviour
 
     public int drawings;
 
+    public TMP_Text talking;
+
     public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
@@ -18,6 +21,7 @@ public class PlayerWalk : MonoBehaviour
         //GetComponent takes a lot of processing time - assign function to call
         myAnimator = GetComponent<Animator>();
         myAnimator.enabled = false;
+        talking.text = "HELLO!!";
     }
 
     void MoveObject() {
