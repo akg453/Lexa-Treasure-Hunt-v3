@@ -72,5 +72,7 @@ public class PlayerWalk : MonoBehaviour
     {
         //call
         MoveObject();
+
+        
     }
 }
