@@ -10,6 +10,13 @@ public class WinScreen : MonoBehaviour
         
     }
 
+    void checkDrawings() {
+
+        GetComponent<PlayerWalk>();
+
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
