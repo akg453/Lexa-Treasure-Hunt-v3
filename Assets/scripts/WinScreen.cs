@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class WinScreen : MonoBehaviour
 {
+    public SpriteRenderer spriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    void checkDrawings() {
-
-        GetComponent<PlayerWalk>();
-
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.K)) {
+            spriteRenderer.sortingOrder = 7;
+        }
     }
 }
